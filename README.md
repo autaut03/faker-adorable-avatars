@@ -1,7 +1,19 @@
 # Faker adorable avatars
 
-Follow [this](https://github.com/fzaninotto/Faker#faker-internals-understanding-providers) to add `Faker\Provider\Adorable` class
-to your Faker providers. After, you'll have access to two new methods:
+## Step 1. Register Laravel service provider
+
+If you don't use Laravel, don't worry; it's optional, go to the next step. 
+But if you do, and you have auto-discovery enabled (it is by default),
+then you can skip Step 2 and go right to step 3. If you don't have auto-discovery on, then register
+`AlexWells\FakerAdorableAvatars\FakerAdorableLaravelProvider` provider either in your `config/app.php`'s `providers`
+section, or in another service provider.
+
+## Step 2. Add provider to Faker
+
+Follow [this](https://github.com/fzaninotto/Faker#faker-internals-understanding-providers) to add `AlexWells\FakerAdorableAvatars\Adorable` class
+to your Faker providers. 
+
+## Step 3. Usage
 
 Generates avatar link. Usually unique, but this is not guaranteed. Optionally, you can provide an ID to use for that
 avatar:

@@ -16,16 +16,24 @@
         "fzaninotto/faker": "^1.8"
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.5"
+        "phpunit/phpunit": "^7.5",
+        "illuminate/support": "^5.7"
     },
     "autoload": {
         "psr-4": {
-            "Faker\\Provider\\": "src/"
+            "AlexWells\\FakerAdorableAvatars\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Faker\\Tests\\Provider\\": "tests/"
+            "AlexWells\\FakerAdorableAvatars\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AlexWells\\FakerAdorableAvatars\\FakerAdorableLaravelProvider"
+            ]
         }
     }
 }

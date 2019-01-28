@@ -1,10 +1,10 @@
 <?php
 
-namespace Faker\Tests\Provider;
+namespace AlexWells\FakerAdorableAvatars\Tests;
 
+use AlexWells\FakerAdorableAvatars\Adorable;
 use Faker\Factory;
 use Faker\Generator;
-use Faker\Provider\Adorable;
 use PHPUnit\Framework\TestCase;
 
 class AdorableAvatarTest extends TestCase

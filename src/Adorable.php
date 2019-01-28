@@ -1,6 +1,8 @@
 <?php
 
-namespace Faker\Provider;
+namespace AlexWells\FakerAdorableAvatars;
+
+use Faker\Provider\Base;
 
 class Adorable extends Base
 {
